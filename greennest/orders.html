@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Orders - GreenNest</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>GreenNest Menu</h2>
+    <a class="navlink" href="index.html">Home</a>
+    <a class="navlink" href="account.html">My Account</a>
+    <a class="navlink" href="signup.html">Signup</a>
+    <a class="navlink" href="login.html">Login</a>
+    <a class="navlink" href="orders.html">My Orders</a>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="brand">
+        <div class="logo">🌱</div>
+        <h1>GreenNest</h1>
+      </div>
+      <div class="top-controls">
+        <div class="search">
+          <input id="search-input" placeholder="Search plants">
+        </div>
+        <button class="icon-btn" id="cart-icon">
+          🛒 <span class="cart-badge" id="cart-count">0</span>
+        </button>
+        <button class="icon-btn" id="auth-btn">Login</button>
+      </div>
+    </div>
+
+    <!-- Orders -->
+    <h2>My Orders</h2>
+    <div id="orders-root" style="margin-top:20px"></div>
+
+    <!-- Footer -->
+    <div class="footer">© GreenNest</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+  renderHeader();
+  initOrdersPage();
+  </script>
+</body>
+</html>

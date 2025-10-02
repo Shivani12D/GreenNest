@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My account - GreenNest</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar"><h2>GreenNest Menu</h2><a class="navlink" href="index.html">Home</a><a class="navlink" href="orders.html">My orders</a></div>
+
+  <div class="container">
+    <div class="header">
+      <div class="brand"><div class="logo">🌱</div><h1>GreenNest</h1></div>
+      <div class="top-controls">
+        <div class="search"><input id="search-input" placeholder="Search plants"></div>
+        <button class="icon-btn" id="cart-icon">🛒<span class="cart-badge" id="cart-count">0</span></button>
+        <button class="icon-btn" id="auth-btn">Login</button>
+      </div>
+    </div>
+
+    <h2>My Account</h2>
+    <div class="card" style="max-width:640px">
+      <div><strong>Username</strong><div id="acc-username" class="muted"></div></div>
+      <div style="margin-top:8px"><strong>Email</strong><div id="acc-email" class="muted"></div></div>
+      <div style="margin-top:8px"><strong>Mobile</strong><div id="acc-mobile" class="muted"></div></div>
+      <div style="margin-top:8px"><strong>Address</strong><div id="acc-address" class="muted"></div></div>
+    </div>
+
+    <div class="footer">© GreenNest</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script> GreenNest.globalInit(); GreenNest.initAccountPage(); </script>
+</body>
+</html>

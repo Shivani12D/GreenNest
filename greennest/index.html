@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GreenNest - Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h2>GreenNest Menu</h2>
+    <a class="navlink" href="account.html">My account</a>
+    <a class="navlink" href="signup.html">Signup</a>
+    <a class="navlink" href="login.html">Login</a>
+    <a class="navlink" id="auth-btn" href="javascript:void(0)">Login</a>
+    <a class="navlink" href="about.html">About us</a>
+    <a class="navlink" href="orders.html">My orders</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="hamburger" title="Menu">
+          <div class="logo">🌱</div>
+          <div style="display:flex;flex-direction:column">
+            <div style="font-weight:800">GreenNest</div>
+            <div style="font-size:12px;color:#4f6b58">Smart Plant Management</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="top-controls">
+        <div class="search">
+          <input id="search-input" placeholder="Search plants, e.g., 'Basil'">
+        </div>
+        <button class="icon-btn" id="cart-icon" title="Cart">
+          🛒<span class="cart-badge" id="cart-count">0</span>
+        </button>
+        <button class="icon-btn" id="auth-btn">Login</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-left">
+        <div style="display:flex;align-items:center;gap:12px">
+          <h2 style="margin:0">GreenNest</h2>
+          <div class="muted">— Your home for happy plants</div>
+        </div>
+        <div class="categories" style="margin-top:8px">
+          <button class="cat-btn active" data-cat="All">All</button>
+          <button class="cat-btn" data-cat="Indoor">Indoor</button>
+          <button class="cat-btn" data-cat="Outdoor">Outdoor</button>
+          <button class="cat-btn" data-cat="Herbs">Herbs</button>
+          <button class="cat-btn" data-cat="Flowers">Flowers</button>
+        </div>
+        <div style="margin-top:10px" class="muted" id="grid-count">20 plants</div>
+      </div>
+      <div class="hero-rect">
+        <div class="slogan">Grow greener, live cleaner — pick your perfect plant 🌿</div>
+      </div>
+    </div>
+
+    <div id="products-grid" class="grid"></div>
+
+    <div class="footer">
+      © GreenNest — Enjoy plants responsibly 🌱
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    GreenNest.globalInit();
+    GreenNest.initIndexPage();
+  </script>
+</body>
+</html>

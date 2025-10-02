@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Plant Details - GreenNest</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>GreenNest Menu</h2>
+    <a class="navlink" href="account.html">My account</a>
+    <a class="navlink" href="signup.html">Signup</a>
+    <a class="navlink" href="login.html">Login</a>
+    <a class="navlink" id="auth-btn" href="javascript:void(0)">Login</a>
+    <a class="navlink" href="about.html">About us</a>
+    <a class="navlink" href="orders.html">My orders</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">🌱</div>
+        <h1>GreenNest</h1>
+      </div>
+      <div class="top-controls">
+        <div class="search"><input id="search-input" placeholder="Search plants"></div>
+        <button class="icon-btn" id="cart-icon">🛒<span class="cart-badge" id="cart-count">0</span></button>
+        <button class="icon-btn" id="auth-btn">Login</button>
+      </div>
+    </div>
+
+    <div id="product-root"></div>
+
+    <div class="footer">© GreenNest</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    GreenNest.globalInit();
+    GreenNest.initProductPage();
+  </script>
+</body>
+</html>
