@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0ji-vmb^&-dp#spac$myo=anqk$vcy88kjoabu(ij7vhelh^qu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -128,4 +128,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Allowed hosts for Render
-ALLOWED_HOSTS = ['yourapp.onrender.com']
+ALLOWED_HOSTS = ['greennest-gah3.onrender.com']
